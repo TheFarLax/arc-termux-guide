@@ -1,0 +1,26 @@
+{
+  "name": "arc-termux-guide",
+  "version": "1.0.0",
+  "description": "A comprehensive guide to deploying Solidity smart contracts on Arc Testnet using Termux on Android.",
+  "main": "deploy.js",
+  "scripts": {
+    "deploy": "node deploy.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "solidity",
+    "web3",
+    "termux",
+    "android",
+    "arcana",
+    "arc-testnet",
+    "ethers.js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^6.12.1",
+    "solc": "0.8.20"
+  }
+}
