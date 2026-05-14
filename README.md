@@ -110,13 +110,13 @@ node deploy.js
 ⏳ Waiting for confirmation...
 ✅ Contract deployed successfully!
 📍 Address: 0x...
-🔗 Explorer: https://explorer.testnet.arcana.network/address/0x...
+🔗 Explorer: https://testnet.arcscan.app/address/0x...
 ```
 
 ---
 
 ## 🔍 Verification
-After deployment, copy the contract address and search for it on the [Arc Testnet Explorer](https://explorer.testnet.arcana.network/).
+After deployment, copy the contract address and search for it on the [Arc Testnet Explorer](https://testnet.arcscan.app/).
 
 ![Explorer Screenshot Placeholder](images/explorer_screenshot.png)
 *(Coming soon: Visual guide for verification)*
@@ -128,7 +128,7 @@ After deployment, copy the contract address and search for it on the [Arc Testne
 | Error | Solution |
 | :--- | :--- |
 | `Command 'node' not found` | Run `pkg install nodejs` |
-| `Insufficient funds` | Get test tokens from the [Arcana Faucet](https://faucet.testnet.arcana.network/) |
+| `Insufficient funds` | Get test tokens from the [Arc Faucet](https://faucet.circle.com/) |
 | `solc compilation failed` | Ensure `package.json` has `solc: 0.8.20` installed |
 | `.env not found` | Ensure the file is named exactly `.env` (with the dot) |
 
@@ -162,9 +162,9 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 ---
 
 ## 🔗 Links & Socials
-- **Website**: [Arcana Network](https://arcana.network/)
-- **Documentation**: [Arcana Docs](https://docs.arcana.network/)
-- **Twitter**: [@ArcanaNetwork](https://twitter.com/ArcanaNetwork)
+- **Website**: [Arc Network](https://arc.network/)
+- **Documentation**: [Arc Docs](https://docs.arc.network/)
+- **Twitter**: [@Arc](https://twitter.com/Arc)
 
 ---
 
