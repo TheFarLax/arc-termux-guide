@@ -58,7 +58,7 @@ pkg install nodejs git python -y
 ### 2. Clone & Setup Project
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/arc-termux-guide.git
+git clone https://github.com/TheFarLax/arc-termux-guide.git
 cd arc-termux-guide
 
 # Install dependencies
@@ -74,7 +74,7 @@ nano .env
 
 Paste the following and replace `YOUR_PRIVATE_KEY` with your actual private key:
 ```env
-RPC_URL=https://rpc.testnet.arcana.network/
+RPC_URL=https://rpc.testnet.arc.network/
 PRIVATE_KEY=YOUR_PRIVATE_KEY_HERE
 ```
 *Press `CTRL + O`, then `Enter` to save, and `CTRL + X` to exit.*
