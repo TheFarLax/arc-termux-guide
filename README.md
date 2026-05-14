@@ -25,11 +25,6 @@ By combining the power of **Termux**, **Node.js**, and **Ethers.js v6**, we elim
 - 🌐 **Arc Testnet Ready**: Pre-configured RPC and Explorer links.
 - 🔒 **Secure-ish**: Local `.env` management (with security warnings).
 
----
-
-## 🏗️ Why this setup?
-
-Desktop environments are great, but the future is mobile. Whether you're commuting, traveling, or just prefer your phone, being able to ship code from anywhere is a superpower. Arc Network's high-speed infrastructure paired with Termux's Linux environment creates a professional development experience in your pocket.
 
 ---
 
