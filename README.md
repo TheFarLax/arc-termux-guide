@@ -1,17 +1,194 @@
-# 📱 Arc Termux Guide: Mobile-First Smart Contract Deployment
+# Deploying on Arc Testnet Using Only Termux
 
-[![Network](https://img.shields.io/badge/Network-Arc_Testnet-blueviolet?style=for-the-badge&logo=ethereum)](https://explorer.testnet.arcana.network/)
-[![Tools](https://img.shields.io/badge/Tools-Termux_%7C_Node.js_%7C_Ethers.js-orange?style=for-the-badge)](https://termux.dev/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+Most smart contract tutorials assume you have a laptop.
+
+I wanted to see how far I could go using only an Android phone and Termux.
+
+Turns out it's completely possible.
+
+This repo contains the code and steps I used to deploy a Solidity contract to Arc Testnet directly from my phone.
 
 ---
 
-## 🌟 Overview
+## What You'll Need
 
-Welcome to the **Arc Termux Guide**! This repository is a production-ready template and step-by-step tutorial designed for developers who want to build and deploy on the **Arc Testnet** using nothing but their **Android smartphone**.
+- Android phone
+- Termux
+- Internet connection
+- Wallet private key (test wallet only)
+- Some testnet tokens
 
-By combining the power of **Termux**, **Node.js**, and **Ethers.js v6**, we eliminate the need for a laptop, making Web3 development truly portable and accessible.
+---
 
+## Install Dependencies
+
+Update packages:
+
+```bash
+pkg update && pkg upgrade -y
+```
+
+Install required tools:
+
+```bash
+pkg install git python nodejs-lts -y
+```
+
+If you get:
+
+```bash
+dpkg was interrupted
+```
+
+run:
+
+```bash
+dpkg --configure -a
+```
+
+and then retry the installation.
+
+---
+
+## Clone Repository
+
+```bash
+git clone https://github.com/TheFarLax/arc-termux-guide.git
+
+cd arc-termux-guide
+```
+
+Install packages:
+
+```bash
+npm install
+```
+
+---
+
+## Configure Environment Variables
+
+Create:
+
+```bash
+nano .env
+```
+
+Add:
+
+```env
+RPC_URL=YOUR_RPC_URL
+PRIVATE_KEY=YOUR_PRIVATE_KEY
+```
+
+Save:
+
+- CTRL + O
+- Enter
+- CTRL + X
+
+---
+
+## Deploy
+
+Run:
+
+```bash
+node deploy.js
+```
+
+Example output:
+
+```bash
+Deploying contract...
+
+Transaction sent...
+
+Waiting for confirmation...
+
+Contract deployed successfully.
+
+Contract Address:
+0x...
+```
+
+---
+
+## Verify Deployment
+
+Copy the deployed contract address and open the Arc explorer.
+
+Search for your address and confirm the contract is visible on-chain.
+
+---
+
+## Common Issues
+
+### nodejs package not found
+
+Try:
+
+```bash
+pkg install nodejs-lts
+```
+
+---
+
+### dpkg interrupted
+
+```bash
+dpkg --configure -a
+```
+
+---
+
+### insufficient funds
+
+Fund your wallet using the Arc testnet faucet.
+
+---
+
+### .env not found
+
+Make sure the filename is exactly:
+
+```bash
+.env
+```
+
+not:
+
+```bash
+.env.txt
+```
+
+---
+
+## Security
+
+Never upload:
+
+- Private key
+- Seed phrase
+- .env file
+
+Use a dedicated test wallet.
+
+Do not use your main wallet.
+
+---
+
+## Why This Repo Exists
+
+I built this because most deployment tutorials are written for laptops.
+
+This repo shows that you can write, compile and deploy smart contracts directly from an Android device using Termux.
+
+If it helps you deploy your first contract from mobile, that's a win.
+
+---
+
+Built by @TheFarLax
 > [!TIP]
 > This guide is optimized for "Mobile-First" builders. All commands are formatted for easy copy-pasting directly into the Termux terminal.
 
