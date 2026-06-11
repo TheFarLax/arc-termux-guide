@@ -294,9 +294,6 @@ node deploy.js
 ## 🔍 Verification
 After deployment, copy the contract address and search for it on the [Arc Testnet Explorer](https://testnet.arcscan.app/).
 
-![Explorer Screenshot Placeholder](images/explorer_screenshot.png)
-*(Coming soon: Visual guide for verification)*
-
 ---
 
 ## ⚠️ Common Errors & Troubleshooting
